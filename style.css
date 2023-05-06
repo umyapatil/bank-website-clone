@@ -1,0 +1,467 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bgColor: linear-gradient(to right, rgba(148, 189, 255, 0.24), rgba(255, 157, 160, 0.301));
+    --primaryColor: #8180e0;
+}
+body{
+    color: #929292;
+    font-size: 19px;
+    font-family: 'Muli', sans-serif;
+    line-height: 30px;
+    font-weight: 400;
+    overflow-x: hidden;
+    letter-spacing: 0;
+    background-image: var(--bgColor);
+}
+
+.green-btn{
+    color: white;
+    background-color: #82b440;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 5px;
+}
+.blue-btn{
+    background-color: var(--primaryColor);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 3px;
+    transition: 0.4s ease-out;
+}
+.blue-color{
+    color: var(--primaryColor);
+}
+.blue-btn:hover{
+    background-color: #262626;
+    cursor: pointer;
+}
+.nav1{
+    background-color: #262626;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+.nav2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7rem;
+}
+.logo{
+    width: 170px;
+}
+
+.section-1{
+    /* background-image: var(--bgColor); */
+}
+
+
+/* -------------------drop down ------------------- */
+.dropbtn {
+    color: black;
+    padding: 30px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    font-size: 1.3rem;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background: none;
+    background-color: white;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 35px;
+    text-decoration: none;
+    display: block;
+    transition: 1s ease;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+}
+
+.button-nav2 {
+    color: rgb(143, 143, 143);
+    border: none;
+    background: none;
+    font-size: 1.3rem;
+
+}
+.nav-bar{
+    position: sticky;
+    top: 0;
+}
+.dropdown-content a:hover{
+
+    color: blue;
+    cursor: pointer;
+}
+
+
+/* drop down end */
+
+/* Layout-One Start*/
+
+.Layout-1{
+    display: flex;
+    flex-direction: row;
+    padding: 5rem 0;
+}
+.left{
+    flex-basis: 50%;
+    padding-top: 5rem;
+    padding-left: 6rem;
+}
+.left h1{
+    color: black;
+    font-size: 3rem;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+.left p{
+    padding-bottom: 20px;
+}
+.right{
+    flex-basis: 50%;
+}
+
+
+/* ----------flip card----------------- */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card{
+    width: 290px;
+    height: 320px;
+    margin-left: 20px;
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    padding: 50px 10px;
+  }
+  .flip-card h1,.flip-card p,.flip-card h2,.flip-card h3{
+    margin-bottom: 20px;
+  }
+  .flip-card p{
+    color: #929292;
+  }
+
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: white;
+    color: black;
+  }
+  .flip-card-front h1{
+    color: #cecece;
+    font-size: 3rem;
+  }
+  /* Style the back side */
+  .flip-card-back {
+    background-color: var(--primaryColor);
+    color: white;
+    transform: rotateY(180deg);
+  }
+.flip-card-back h1{
+    font-size: 3rem;
+}
+  /* flip-card-end */
+
+
+  /* ----cards------- */
+  .cards{
+    display: flex;
+    align-items: center;
+  }
+  .v-sd-1{
+    margin: 0px 40px;
+  }
+  .v-sd-2{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+
+
+  /* ------------cards end ----------- */
+  .Layout-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    text-align: center;
+  }
+  .hp{
+    font-size: 3rem;
+    color: black;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    
+  }
+
+  .Layout-3{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding-bottom: 4rem;
+
+  }
+.suscribe-button{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 55px 120px;
+    border: solid var(--primaryColor) 3px;
+    border-radius: 100px;
+    margin-top: 30px;
+    background-color:#eaeaff;
+}
+  .suscribe-button input{
+    padding: 27px 40px;
+    border-radius: 30px;
+    border: none;
+  }
+  .suscribe-button .blue-btn{
+    border-radius: 30px;
+  }
+  .lay2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+
+  /* layout 4 */
+  .Layout-4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 90px;
+    text-align: center  ;
+    margin-bottom: 40px;
+  }
+  .Layout-4 h3{
+    margin-top: 10px;
+    color: black;
+  }
+  /* -----letter-------- */
+  .letter{
+    color: white;
+    text-align: center;
+    padding: 60px 70px;
+    margin-right: 40px;
+    border-radius: 50px;
+    background: var(--primaryColor);
+    box-shadow:
+      /* The top layer shadow */
+      0 -1px 1px rgba(0,0,0,0.15),
+      /* The second layer */
+      0 -10px 0 -5px #eee,
+      /* The second layer shadow */
+      0 -10px 1px -4px rgba(0,0,0,0.15),
+       /* The third layer */
+      0 -20px 0 -10px #eee,
+      /* The third layer shadow */
+      0 -20px 1px -9px rgba(0,0,0,0.15);
+      /* Padding for demo purposes */
+      padding: 30px;
+  
+  }
+  .letter img{
+    margin-bottom: 50px;
+    padding-top: 30px;
+  }
+  .letter h2{
+    font-size: 5rem;
+    text-align: left;
+  }
+
+  .letter p{
+    font-size: 26px;
+    line-height: 1.6;
+    padding-left: 100px;
+    text-align: left;
+  }
+  .sign{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    padding-left: -100;
+  }
+
+/* --------------layout 5------------- */
+.Layout-5{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.Layout-5 hr{
+    margin-top: 10px;
+}
+.side1{
+    flex-basis: 40%;
+}
+.side2{
+    flex-basis: 60%;
+    float: right;
+}
+.side1 h3{
+    color: black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    transition: 0.5s;
+}
+.side1 h3:hover{
+    color: #8180e0;
+    cursor: pointer;
+}
+.side1 a{
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: #8180e0;
+    transition: 0.6s;
+}
+.side1 a:hover{
+    color: black;
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #e6e6e6;
+    padding: 50px 0;
+}
+.f1 img{
+    margin-bottom: 40px;
+}
+.f1 h2{
+    color: #8180e0;
+    padding-bottom: 10px;
+}
+.f2 h3{
+    color: black;
+    padding-bottom: 20px;
+}
+.f2 p{
+    padding-bottom: 20px;
+}
+.f3{
+    display: flex;
+    flex-direction: column;
+}
+.f3 input{
+    padding: 20px 40px;
+    border: rgb(190, 190, 190) solid 1px;
+    margin-bottom: 20px;
+}
+.f3 button {
+    margin-bottom: 10px;
+}
+.f3 p{
+    font-size: 3rem;
+    color:black;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+.last-lable{
+     padding: 15px 0;
+     padding-left: 10rem;
+     background-color: white;
+}
+.color-p{
+    color: var(--primaryColor);
+}
+
+
+
+
+
+
+/* -----------mobile-------- */
+@media screen and (max-width:900px){
+    .Layout-1{
+        flex-direction: column;
+    }
+    .Layout-3{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .suscribe-button{
+        flex-direction: column;
+    }
+    .Layout-4{
+        
+        flex-direction: column;
+    }
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer input,.footer button{
+        width: 400px;
+        align-self: center;
+    }
+    .menu{
+        flex-direction: column;
+    }
+}
